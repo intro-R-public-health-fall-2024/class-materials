@@ -113,7 +113,7 @@ filter(nmes.data, totalexp > 10000)
 filter(nmes.data, eversmk == "no", totalexp > 10000)
 ```
 
-*You can see there are 86 individuals who had never smoked and spend more than $10,000.*
+*You can see there are 86 individuals who had never smoked and spent more than $10,000.*
 
 If we want to save any of these *new* data frames for further use, we need to store the result as something using the *assignment operator*, `<-`:
 ```{r}
@@ -154,7 +154,7 @@ near((1/49)*(7^2), 1)
 
 Multiple arguments to the `filter()` function are combined with AND so that all of the expressions must be met in the filtered output.  So the following command subsets to individuals with `eversmk == "No"` AND `totalexp > 10000`.  This gives us never smokers with high expenditures:
 ```{r}
-filter(nmes.data, eversmk == "No", totalexp > 10000)
+filter(nmes.data, eversmk == "no", totalexp > 10000)
 ```
 
 We can also combine expressions with logical operators ourselves using:
@@ -165,12 +165,12 @@ We can also combine expressions with logical operators ourselves using:
 
 So we could also write the following to get never smokers with high expenditures:
 ```{r}
-filter(nmes.data, eversmk == "No" & totalexp > 10000)
+filter(nmes.data, eversmk == "no" & totalexp > 10000)
 ```
 
 To get never smokers OR those with high expenditures we would write:
 ```{r}
-filter(nmes.data, eversmk == "No" | totalexp > 10000)
+filter(nmes.data, eversmk == "no" | totalexp > 10000)
 ```
 
 To get all ever smokers EXCEPT those with high expenditures we could write:
