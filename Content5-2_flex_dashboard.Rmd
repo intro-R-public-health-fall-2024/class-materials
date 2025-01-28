@@ -3,9 +3,10 @@ title: "Content 5-2: Flex dashboards"
 date: "Monday, December 2, 2024"
 output: 
   html_document:
-    number_sections: true
+    number_sections: false
     toc: true
     toc_depth: 1
+    keep_md: yes
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)

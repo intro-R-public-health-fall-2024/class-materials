@@ -1,7 +1,9 @@
 ---
 title: "Content 1-2: More on visualization"
 date: "Monday, September 16, 2024"
-output: html_document
+output: 
+  html_document:
+   keep_md: yes
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)

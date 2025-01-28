@@ -3,9 +3,10 @@ title: "Content 5-1: Reports with R Markdown"
 date: "Monday, November 18, 2024"
 output: 
   html_document:
-    number_sections: true
+    number_sections: false
     toc: true
     toc_depth: 1
+    keep_md: yes
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
